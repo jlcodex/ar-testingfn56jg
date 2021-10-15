@@ -29,10 +29,7 @@
                     src="assets/asset.jpeg"
                     clickhandler
                     scale="1 1 1"
-                    class="clickable"
                     rotation="-90 0 0"
-                    class="panel"
-                    onclick="alert('xd')"
                     gesture-handler
                 ></a-image>
             </a-marker>
@@ -41,7 +38,8 @@
         </a-scene>
         <script>
             function handleRotation(){alert('xd')}
-    sceneEl.addEventListener("onefingermove", handleRotation);    
+            var sceneEl=document.getElementById("scene")
+    sceneEl.addEventListener("onclick", handleRotation);    
 </script>
 
     </body>
